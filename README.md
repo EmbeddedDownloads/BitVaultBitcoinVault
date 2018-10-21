@@ -1,1 +1,4 @@
 # BitVaultBitcoinVault
+
+The BitVault is the most secure device on the market for Bitcoin transactions featuring 3IMS(Third Party Independent Multi-layer Security). Before you can send Bitcoin, you will be required to scan your fingerprint, scan your iris and scan your NFC card. Only after all three things have been authenticated will a transaction be confirmed.
+From the Bitcoin Vault Home Screen you will be able to access your 5 Bitcoin wallets and your Bitcoin Vault. Easily send Bitcoin to any Bitcoin address by scanning the QR code using the camera of the BitVault or copying the address. For receiving Bitcoin you can provide your QR code on the screen or copy the address and use it to provide to the sender. Your Bitcoin Vault will only be able to send Bitcoin to your wallets in your application. Easily empty all your wallets into your vault with one easy click.
