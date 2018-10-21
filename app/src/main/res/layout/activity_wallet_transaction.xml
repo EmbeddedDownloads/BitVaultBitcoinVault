@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeBottomMain"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/mainLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_0dp"
+                    android:layout_weight="1.2">
+
+                    <include
+                        android:id="@+id/headerLayout"
+                        layout="@layout/header_layout" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_0dp"
+                    android:layout_weight="1.8">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/walletRecycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/padding_10dp"
+                        android:layout_marginRight="@dimen/padding_10dp"
+                        android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+
+                    <TextView
+                        android:id="@+id/no_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/no_record_found" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeBottomMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/buttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/receiveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/backColor"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_10dp">
+
+                    <TextView
+                        android:id="@+id/recieveBitcoinSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_5dp"
+                        android:gravity="center"
+                        android:text="e"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_20" />
+
+                    <com.app.bitcoinvault.util.RobotoItalic
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/padding_5dp"
+                        android:paddingRight="@dimen/padding_5dp"
+                        android:text="@string/receive"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_18" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    android:background="#cfba8b" />
+
+
+                <LinearLayout
+                    android:id="@+id/sendBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/backColor"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_10dp">
+
+
+                    <com.app.bitcoinvault.util.RobotoItalic
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/padding_5dp"
+                        android:paddingRight="@dimen/padding_5dp"
+                        android:text="Send"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_18" />
+
+                    <TextView
+                        android:id="@+id/sendBitcoinSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="f"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_20" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

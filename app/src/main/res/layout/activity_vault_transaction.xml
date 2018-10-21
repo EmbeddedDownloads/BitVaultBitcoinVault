@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeBottomMain"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/mainLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_0dp"
+                    android:layout_weight="1.2">
+
+                    <include
+                        android:id="@+id/headerLayout"
+                        layout="@layout/header_layout" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_0dp"
+                    android:layout_weight="1.8">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/walletRecycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/padding_10dp"
+                        android:layout_marginRight="@dimen/padding_10dp"
+                        android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/no_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/no_record_found" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeBottomMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/bottomSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backColor"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/bitcoinSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="f"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_20" />
+
+                <com.app.bitcoinvault.util.RobotoItalic
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_5dp"
+                    android:text="@string/send"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_18" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

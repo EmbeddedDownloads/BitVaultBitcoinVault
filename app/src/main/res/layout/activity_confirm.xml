@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/activity_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.app.bitcoinvault.view.activity.ConfirmActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/mainLinear"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:background="@mipmap/wallet_background">
+
+                <include
+                    android:id="@+id/headerLayout"
+                    layout="@layout/header_layout" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@+id/confirmButton"
+                android:layout_below="@+id/headerLayout"
+                android:layout_weight="1.8"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.app.bitcoinvault.util.RobotoLightItalic
+                        android:id="@+id/bitcoinTransferTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginRight="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/padding_20dp"
+                        android:text="@string/bitcoins_transfered_at"
+                        android:textColor="@color/all_text_color"
+                        android:textSize="@dimen/size_18" />
+
+                    <com.app.bitcoinvault.util.RobotoLightItalic
+                        android:id="@+id/VaultTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bitcoinTransferTextView"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginRight="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/padding_5dp"
+                        android:text="@string/vault"
+                        android:textColor="@color/all_text_color"
+                        android:textSize="@dimen/size_14" />
+
+                    <com.app.bitcoinvault.util.RobotoLightItalic
+                        android:id="@+id/amountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/VaultTextView"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginRight="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/padding_20dp"
+                        android:text="@string/amount"
+                        android:textColor="@color/all_text_color"
+                        android:textSize="@dimen/size_18" />
+
+                    <LinearLayout
+                        android:id="@+id/amtLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/amountTextView"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginRight="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/padding_5dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded">
+
+
+                        <TextView
+                            android:id="@+id/bitcoinIconTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_5dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="b"
+                            android:textColor="@color/all_text_color" />
+
+                        <com.app.bitcoinvault.util.RobotoLightItalic
+                            android:id="@+id/amtInBitcoin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="0.0"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="number|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding_5dp"
+                            android:textColor="@color/all_text_color"
+                            android:textColorHint="@color/all_text_color"
+                            android:textSize="@dimen/size_14" />
+
+
+
+
+                    </LinearLayout>
+
+
+                    <com.app.bitcoinvault.util.RobotoLightItalic
+                        android:id="@+id/transTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/amtLay"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginRight="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/padding_20dp"
+                        android:text="@string/transaction_fee"
+                        android:textColor="@color/all_text_color"
+                        android:textSize="@dimen/size_18" />
+
+                    <LinearLayout
+                        android:id="@+id/tranLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transTextView"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginRight="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/padding_5dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded">
+
+                        <TextView
+                            android:id="@+id/feeBitcoinIconTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_5dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="b"
+                            android:textColor="@color/all_text_color" />
+
+
+                        <com.app.bitcoinvault.util.RobotoLightItalic
+                            android:id="@+id/amtFeeInBitcoin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded"
+                            android:hint="0.0"
+                            android:inputType="number|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding_5dp"
+                            android:textColor="@color/all_text_color"
+                            android:textColorHint="@color/all_text_color"
+                            android:textSize="@dimen/size_14" />
+
+
+
+                    </LinearLayout>
+
+                    <com.app.bitcoinvault.util.RobotoLightItalic
+                        android:id="@+id/totalTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tranLay"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginRight="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/padding_20dp"
+                        android:text="@string/total"
+                        android:textColor="@color/all_text_color"
+                        android:textSize="@dimen/size_18" />
+
+                    <LinearLayout
+                        android:id="@+id/totalLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/totalTextView"
+                        android:layout_marginBottom="@dimen/padding_20dp"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginRight="@dimen/padding_20dp"
+                        android:layout_marginTop="@dimen/padding_5dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded">
+
+
+                        <TextView
+                            android:id="@+id/amtBitcoinIconTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_5dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="b"
+                            android:textColor="@color/all_text_color" />
+
+
+                        <com.app.bitcoinvault.util.RobotoLightItalic
+                            android:id="@+id/totalAmtInBitcoin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="0.0"
+                            android:inputType="number|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding_5dp"
+                            android:textColor="@color/all_text_color"
+                            android:textColorHint="@color/all_text_color"
+                            android:textSize="@dimen/size_14" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+            <com.app.bitcoinvault.util.RobotoItalic
+                android:id="@+id/confirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/roundedWoodColor"
+                android:gravity="center"
+                android:padding="@dimen/padding_10dp"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_18" />
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</layout>

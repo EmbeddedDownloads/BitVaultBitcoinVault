@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Bitcoin Vault</string>
+    <string name="available_bits">Available Bitcoin</string>
+    <string name="available_amount">Available Amount</string>
+    <string name="decimal_amount">Decimal</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="bitcoin_wallet">Bitcoin Wallet</string>
+    <string name="bitcoin_vault">Bitcoin Vault</string>
+    <string name="send">Send</string>
+
+    <string name="send_from">Send From</string>
+    <string name="send_to">Send To</string>
+    <string name="send_to_vault">Transfer to Vault</string>
+    <string name="amount">Amount</string>
+    <string name="description">Description</string>
+    <string name="empty_to_vault">Empty to Vault</string>
+    <string name="bitwallet">Bit Wallet</string>
+    <string name="receive">Receive</string>
+    <string name="confirmation_msg">Are you sure you want to transfer All Wallets BTC to Vault?\u0020 </string>
+    <string name="btc_to">\u0020BTC from\u0020</string>
+    <string name="to">\u0020to\u0020</string>
+    <string name="question_mark">\u0020?</string>
+    <string name="bit">Bitcoin</string>
+    <string name="wallet"> Vault</string>
+    <string name="bitcoins_transfered_at">Transfer To</string>
+    <string name="vault">Vault</string>
+    <string name="transaction_fee">Transaction Fee</string>
+    <string name="total">Total</string>
+    <string name="confirm">Confirm</string>
+    <string name="your_transaction_has_been">Your transaction has been \n \n successfully processed <br /> <br /> </string>
+    <string name="your_transaction_has_been_failed">Your transaction has been failed</string>
+    <string name="make_another_transaction">Make another send transaction</string>
+    <string name="all_wallet_empty_to_vault">Empty all Wallets to Vault</string>
+    <string name="address">Address</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="home">Home</string>
+    <string name="dummy_amount">0</string>
+    <string name="dummy_amount_decimal">0</string>
+    <string name="dummy_amount_dollar">0</string>
+    <string name="dummy_amount_dollar_decimal">0</string>
+    <string name="c">c</string>
+    <string name="b">b</string>
+    <string name="transfer_to">Transfer To</string>
+    <string name="next">Next</string>
+
+    <string name="write_message">Storage permission not granted. Please grant permission by pressing OK</string>
+    <string name="camera">Camera permission not granted. Please grant permission by pressing OK</string>
+    <string name="edit">Edit</string>
+    <string name="wallet_name">Wallet Name</string>
+    <string name="icon">Icon</string>
+    <string name="or_browse">or Browse...</string>
+    <string name="wallet_1">Wallet 1</string>
+
+    <string name="send_hy">\u0020- Send</string>
+    <string name="invoice_hy">\u0020- Invoice</string>
+    <string name="receive_hy">\u0020- Receive</string>
+    <string name="btc">\u0020BTC</string>
+
+
+    <string name="please_enter_amount">Please enter amount</string>
+    <string name="please_enter_valid_address">Receiver address and Sender address can not be same.</string>
+    <string name="Please_enter_valid_amount">Please enter valid amount</string>
+    <string name="Please_enter_valid_address">Invalid address</string>
+    <string name="reciever_add">Enter Receiver address</string>
+    <string name="no_record_found">No Transactions</string>
+    <string name="intnetcheck">Please check your internet connection.</string>
+    <string name="insuficient_bal">Insufficient amount to transfer</string>
+    <string name="version">Version\u0020</string>
+
+    <string name="app_key_value">lm4emdzwf0okwribvox83q</string>
+    <string name="app_key">app_key</string>
+    <string name="done">Done</string>
+    <string name="toast_crash">App crashes, please send mail to report.</string>
+    <string name="tryagain">Try Again!</string>
+
+    <string-array name="spinnerList">
+        <item>All</item>
+        <item>Sent</item>
+        <item>Received</item>
+    </string-array>
+
+
+</resources>

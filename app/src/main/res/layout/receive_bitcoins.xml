@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/mainLinear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_0dp"
+            android:layout_weight="1.2">
+
+            <include
+                android:id="@+id/headerLayout"
+                layout="@layout/header_layout" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_0dp"
+            android:layout_weight="1.8"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeReceiver"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/qrImage"
+                    android:layout_width="@dimen/padding_200dp"
+                    android:layout_height="@dimen/padding_200dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true" />
+
+                <com.app.bitcoinvault.util.RobotoItalic
+                    android:id="@+id/adressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qrImage"
+                    android:layout_marginLeft="@dimen/padding_10dp"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:text="@string/address"
+                    android:textColor="@color/all_text_color"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/size_18" />
+
+
+                <com.app.bitcoinvault.util.RobotoItalic
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adressTextView"
+                    android:layout_marginLeft="@dimen/padding_10dp"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:textColor="@color/all_text_color"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/size_14" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

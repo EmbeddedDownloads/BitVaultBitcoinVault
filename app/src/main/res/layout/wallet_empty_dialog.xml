@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_10dp">
+
+
+            <com.app.bitcoinvault.util.RobotoLightItalic
+                android:id="@+id/confMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_20dp"
+                android:text="@string/confirmation_msg"
+                android:textColor="@color/all_text_color"
+                android:textSize="@dimen/size_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:orientation="horizontal"
+                android:weightSum="2.1">
+
+                <com.app.bitcoinvault.util.RobotoItalic
+                    android:id="@+id/cancelButton"
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_light_orange"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_5dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" />
+
+                <com.app.bitcoinvault.util.RobotoItalic
+                    android:id="@+id/okButton"
+                    android:layout_width="@dimen/width_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_green"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_5dp"
+                    android:text="@string/ok"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

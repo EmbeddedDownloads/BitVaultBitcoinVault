@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/activity_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/padding_10dp">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:text="@string/edit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_20" />
+
+        <TextView
+            android:id="@+id/walletName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:text="@string/wallet_name"
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/normal_text_size" />
+
+        <EditText
+            android:id="@+id/walletEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/walletName"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:background="@null"
+            android:backgroundTint="@color/all_text_color"
+            android:hint="@string/wallet_1"
+            android:maxLength="25"
+            android:paddingBottom="@dimen/padding_5dp"
+            android:paddingTop="@dimen/padding_5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/light_grey"
+            android:textSize="@dimen/normal_text_size" />
+
+        <View
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/walletEditText"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:background="@color/line_seprate_color" />
+
+        <TextView
+            android:id="@+id/iconImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topView"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/icon"
+            android:textColor="@color/all_text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconImage"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/imageLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70dp"
+                    android:layout_below="@id/iconImage"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_36dp"
+                        android:layout_height="@dimen/_36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/padding_10dp"
+                        android:background="@drawable/round_image_view" />
+
+                    <ImageView
+                        android:id="@+id/logoImageView"
+                        android:layout_width="@dimen/padding_30dp"
+                        android:layout_height="@dimen/padding_30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/size_13"
+                        android:background="@drawable/wallet_logo"
+                        android:textColor="@color/backColor" />
+
+
+                </RelativeLayout>
+
+                <com.app.bitcoinvault.util.RobotoItalic
+                    android:id="@+id/cancelButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/padding_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_light_orange"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_5dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/padding_5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70dp"
+                    android:orientation="horizontal">
+
+                    <com.app.bitcoinvault.util.BitVaultFont
+                        android:id="@+id/bitwalletIcon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="left"
+                        android:text="@string/c"
+                        android:textColor="@color/backColor"
+                        android:textSize="@dimen/size_30" />
+
+
+                    <com.app.bitcoinvault.util.BitVaultFont
+                        android:id="@+id/camera"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="q"
+                        android:textSize="@dimen/size_30" />
+
+
+                    <com.app.bitcoinvault.util.BitVaultFont
+                        android:id="@+id/galleryImage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:onClick="openGallery"
+                        android:text="r"
+                        android:textSize="@dimen/size_25" />
+                </LinearLayout>
+
+                <com.app.bitcoinvault.util.RobotoItalic
+                    android:id="@+id/okButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_green"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_5dp"
+                    android:text="@string/ok"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

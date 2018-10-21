@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#c1a565</color>
+    <color name="backColor">#c1a565</color>
+    <!--<color name="backColor_transperancy">#80c1a565</color>-->
+    <color name="backColor_transperancy">#CCBFA364</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#33FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="wallet_text_color">#3d3d3d</color>
+    <color name="green">#26CB6F</color>
+    <color name="viewColor">#DDDDDD</color>
+    <color name="sendFontColor">#4B4F52</color>
+    <color name="lightOrangeColor">#ff6A6B</color>
+    <color name="all_text_color">#3c4143</color>
+    <color name="bg_color">#e9e9e9</color>
+    <color name="empty_wallet_color">#BD9D6A</color>
+    <color name="line_seprate_color">#cdcdcd</color>
+    <color name="red">#DA4A4A</color>
+    <color name="darkGreyColor">#919191</color>
+    <color name="roundedWoodColor">#9C814A</color>
+    <color name="title_grey_color">#818486</color>
+    <color name="light_grey">#C1C2C1</color>
+    <color name="light_grey_back">#EDEDEC</color>
+
+    <color name="maincolor">#BC9C6A</color>
+</resources>

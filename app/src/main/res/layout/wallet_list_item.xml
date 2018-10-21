@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding_10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:paddingLeft="@dimen/padding_20dp"
+    android:paddingRight="@dimen/padding_20dp">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="@dimen/padding_50dp"
+        android:layout_height="@dimen/padding_50dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/wallet_logo" />
+
+    <TextView
+        android:id="@+id/walletNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/padding_10dp"
+        android:layout_marginStart="@dimen/padding_20dp"
+        android:layout_toEndOf="@+id/logoImageView"
+        android:layout_toStartOf="@+id/walletAvailableCoinLay"
+        android:textColor="@color/all_text_color"
+        android:textSize="@dimen/size_18" />
+
+
+    <LinearLayout
+        android:id="@+id/walletAvailableCoinLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/padding_20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bitcoinlogoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_3"
+            android:layout_marginStart="@dimen/padding_20dp"
+            android:text="@string/b"
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/size_13sp" />
+
+        <TextView
+            android:id="@+id/walletAvailableCoinTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/all_text_color"
+            android:textSize="@dimen/size_16" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

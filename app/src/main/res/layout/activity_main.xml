@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:ignore = "all"
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10dp"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@mipmap/home_top">
+
+            <Button
+                android:layout_width="@dimen/button_width_180"
+                android:layout_height="@dimen/button_height_60"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/padding_60"
+                android:layout_marginRight="@dimen/padding_50dp"
+                android:background="@android:color/holo_red_light"
+                android:text="Bitcoin Wallet"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bitWalletButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/padding_20dp"
+                android:layout_marginLeft="@dimen/margin_negative"
+                android:background="@color/backColor_transperancy"
+                android:includeFontPadding="false"
+                android:paddingRight="@dimen/padding_30dp"
+                android:paddingTop="@dimen/padding_10dp"
+                android:text="@string/bitcoin_wallet"
+                android:textColor="@color/white_transparent"
+                android:textSize="@dimen/bitcoin_size"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_above="@+id/bitWalletButton"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margin_negative"
+                android:layout_marginRight="@dimen/padding_50dp"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/bitwalletIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/padding_20dp"
+                        android:text="c"
+                        android:textColor="@color/backColor"
+                        android:textSize="@dimen/home_page_text_size_cheat" />
+
+                    <View
+                        android:id="@+id/lineViewWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/bitwalletIcon"
+                        android:background="@color/viewColor" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lineViewWallet"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/bitcoin_wallet"
+                            android:textColor="@color/wallet_text_color"
+                            android:textSize="@dimen/amount_text_sixe"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/rightArrowWallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="l"
+                            android:textColor="@color/backColor"
+                            android:textSize="@dimen/header_text_size_arrow"
+                            android:textStyle="bold|italic" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:layout_weight="1"
+            android:background="@mipmap/home_back">
+
+            <TextView
+                android:id="@+id/bitVaultButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/margin_negative_7"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:background="@color/backColor_transperancy"
+                android:paddingLeft="@dimen/padding_40dp"
+                android:paddingTop="@dimen/padding_10dp"
+                android:text="@string/bitcoin_vault"
+                android:textColor="@color/white_transparent"
+                android:textSize="@dimen/bitcoin_size"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewVault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bitVaultButton"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginLeft="@dimen/padding_50dp"
+                android:layout_marginTop="@dimen/margin_negative"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:id="@+id/relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_20dp">
+
+                        <TextView
+                            android:id="@+id/bitvaultIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="d"
+                            android:textColor="@color/backColor"
+                            android:textSize="@dimen/home_page_text_size_cheat" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/lineView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/relative"
+                        android:background="@color/viewColor" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lineView"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/bitcoin_vault"
+                            android:textColor="@color/wallet_text_color"
+                            android:textSize="@dimen/amount_text_sixe"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/rightArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="l"
+                            android:textColor="@color/backColor"
+                            android:textSize="@dimen/header_text_size_arrow"
+                            android:textStyle="bold|italic" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="60dp"
+                android:background="@android:color/holo_red_light"
+                android:text="Bitcoin-Vault"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
